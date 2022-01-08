@@ -15,6 +15,7 @@ import (
 func main() {
 	if len(os.Args) < 2 {
 		fmt.Println("Usage: ddg [query]")
+		return
 	}
 	web := websearch.New(provider.NewUnofficialDuckDuckGo())
 	csig := make(chan os.Signal, 1)
