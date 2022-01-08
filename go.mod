@@ -1,4 +1,4 @@
-module ddg
+module github.com/cauefcr/ddg
 
 go 1.17
 

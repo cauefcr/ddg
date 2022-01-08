@@ -1,7 +1,5 @@
 package main
 
-// Usage: ./ddg <query> | fzf
-
 import (
 	"fmt"
 	"os"
@@ -15,6 +13,9 @@ import (
 )
 
 func main() {
+	if len(os.Args) < 2 {
+		fmt.Println("Usage: ddg [query]")
+	}
 	web := websearch.New(provider.NewUnofficialDuckDuckGo())
 	csig := make(chan os.Signal, 1)
 	signal.Notify(csig, syscall.SIGPIPE)
