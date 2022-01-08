@@ -33,3 +33,7 @@ ddg [search] | grep [filter] | fzf
 ## Show it to me in action
 
 ![The program in action](./ddg.gif "The program in action")
+
+## Libraries used
+
+[websearch](https://github.com/the-go-tool/websearch/)
